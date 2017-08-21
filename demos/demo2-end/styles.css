@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
+* {
+  font-family: "Saira", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#input-group {
+  width: 600px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -300px;
+  margin-top: -100px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+}
+#input-group a {
+  align-self: center;
+  padding: 15px 35px;
+  background: none;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  transition: all 500ms ease;
+}
+#input-group a:hover {
+  background-color: black;
+}
+#input-group ~ h1 {
+  text-align: center;
+  padding-top: 180px;
+  color: white;
+  font-size: 4em;
+}
+
+
+#container {
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -400px;
+  margin-top: -150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  transition: all 500ms ease;
+  color: black;
+  border: 1px solid black;
+  background: none;
+  box-shadow: none;
+}
+#container:hover {
+  background: blueviolet;
+  color: white;
+  box-shadow: 0 0 75px 45px #ccc;
+}
+#container #img {
+  width: 300px;
+}
+#container #img svg {
+  width: 200px;
+  height: 200px;
+}
+#container #img svg path {
+  fill: currentColor;
+  cursor: pointer;
+}
+#container #img svg path:hover {
+  fill: cyan;
+}
+#container #txt h1, #container #txt h3 {
+  display: inline-block;
+}
+#container #txt h1 {
+  font-size: 7em;
+  margin: 10px;
+}
+#container #txt h3 {
+  font-size: 2em;
+  margin-top: 0;
+}

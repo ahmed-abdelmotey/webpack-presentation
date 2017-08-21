@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Saira');
+
+$primary-color : skyblue;
+$secondary-color : #eee;
+$imported-font : 'Saira', sans-serif;
+
+
+@mixin center-div($width, $height){
+  width : $width + unquote("px");
+  height: $height +  unquote("px");
+  position: absolute;
+  left: 50%;
+  top : 50%;
+  margin-left: -1 * $width  / 2 +  unquote("px");
+  margin-top:  -1 * $height / 2 +  unquote("px");
+}
+
+*{
+  font-family: $imported-font;
+  margin:0;
+  padding:0;
+}

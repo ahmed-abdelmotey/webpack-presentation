@@ -1,0 +1,43 @@
+@import 'background';
+
+body{
+  background: $primary-color;
+}
+
+#input-group{
+  @include center-div(600,200);
+
+  display: flex;
+  justify-content: space-around;
+
+  border:2px solid #ddd;
+  border-radius: 20px;
+
+  a{
+    align-self: center;
+    padding: 15px 35px;
+
+    background: none;
+    border: 2px solid #ddd;
+    border-radius: 10px;      
+
+    color:white;
+    text-decoration: none;
+    font-size:2em;
+
+    transition: all 500ms ease;
+
+    &:hover{
+      background-color: black;
+    }
+  }
+}
+
+h1{
+  #input-group ~ & {
+    text-align: center;
+    padding-top:180px;
+    color:white;
+    font-size: 4em;
+  }
+}

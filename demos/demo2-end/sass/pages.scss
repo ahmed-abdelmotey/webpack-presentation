@@ -1,0 +1,57 @@
+@import 'background';
+
+body{
+  background: $secondary-color;
+}
+#container{
+  @include center-div(800,300);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  
+  transition: all 500ms ease;
+
+  color:black;
+  border: 1px solid black;
+  background: none;
+  box-shadow: none;
+
+  &:hover{
+    background: blueviolet;
+    color:white;
+    box-shadow: 0 0 75px 45px #ccc;
+  }
+
+  #img{
+    width: 300px;
+    
+    svg{
+      width: 200px;
+      height: 200px;
+      path{
+        fill: currentColor;
+        cursor: pointer;
+
+        &:hover{
+          fill:cyan;
+        }
+      }
+    }
+  }
+  #txt{
+    h1,h3{
+      display: inline-block;
+    }
+    h1{
+      font-size: 7em;
+      margin: 10px;
+    }
+    h3{
+      font-size: 2em;
+      margin-top:0;
+    }
+  }
+}
+
+

@@ -1,0 +1,13 @@
+/* @import url('https://fonts.googleapis.com/css?family=Saira'); */
+
+/* $primary-color: skyblue; */
+body{
+  text-align: center;
+  padding: 100px;
+  padding-top:250px;
+  /* background: $primary-color; */
+}
+.message{
+  font-size: 5em;
+  font-family: 'Saira', sans-serif;
+}
